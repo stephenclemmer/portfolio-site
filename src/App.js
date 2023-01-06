@@ -5,6 +5,8 @@ import Welcome from './welcome';
 import About from './about';
 import Projects from './projects';
 import Contact from './contact';
+import Footer from './footer';
+import Container from '@mui/material/Container';
 
 function App() {
   const title = "Welcome to Stephen's Portfolio Site";
@@ -17,6 +19,7 @@ function App() {
         <About />
         <Projects />
         <Contact />
+        <Footer />
         {/* <h1>{title}</h1>
         <Button variant="contained">This is a button</Button> */}
       </div>
