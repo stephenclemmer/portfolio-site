@@ -1,6 +1,6 @@
 import './App.css';
 import Button from '@mui/material/Button';
-import ButtonAppBar from './navbar';
+import ButtonAppBar from './appbar';
 import Welcome from './welcome';
 import About from './about';
 import Projects from './projects';

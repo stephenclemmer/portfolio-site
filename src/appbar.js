@@ -24,12 +24,12 @@ export default function ButtonAppBar() {
             <MenuIcon />
           </IconButton>
         
-        <ButtonGroup>
+        <Container style={{textAlign: 'right'}}>
           <Button color="inherit">About</Button>
           <Button color="inherit">Projects</Button>
           <Button color="inherit">Contact</Button>
           <Button color="inherit">Resume</Button>
-        </ButtonGroup>
+        </Container>
         </Toolbar>
       </AppBar>
     </Box>
