@@ -17,8 +17,11 @@ export default function Projects() {
       >
         Projects
       </Typography>
-      <Grid container spacing="6">
+      <Grid container 
+      alignItems="center"
+      spacing="6">
 
+      <Grid item>
         <Card sx={{ maxWidth: 345 }}>
           <CardActionArea>
             <CardMedia
@@ -26,7 +29,7 @@ export default function Projects() {
               height="140"
               image="/static/images/cards/contemplative-reptile.jpg"
               alt="green iguana"
-            />
+              />
             <CardContent>
               <Typography gutterBottom variant="h5" component="div">
                 Library of Things
@@ -42,6 +45,9 @@ export default function Projects() {
             </CardContent>
           </CardActionArea>
         </Card>
+        </Grid>
+
+<Grid item>
 
         <Card sx={{ maxWidth: 345 }}>
           <CardActionArea>
@@ -50,7 +56,7 @@ export default function Projects() {
               height="140"
               image="/static/images/cards/contemplative-reptile.jpg"
               alt="green iguana"
-            />
+              />
             <CardContent>
               <Typography gutterBottom variant="h5" component="div">
                 Tech Prep
@@ -66,6 +72,9 @@ export default function Projects() {
             </CardContent>
           </CardActionArea>
         </Card>
+              </Grid>
+
+<Grid item>
 
         <Card sx={{ maxWidth: 345 }}>
           <CardActionArea>
@@ -74,7 +83,7 @@ export default function Projects() {
               height="140"
               image="/static/images/cards/contemplative-reptile.jpg"
               alt="green iguana"
-            />
+              />
             <CardContent>
               <Typography gutterBottom variant="h5" component="div">
                 TravelBytes
@@ -90,6 +99,7 @@ export default function Projects() {
             </CardContent>
           </CardActionArea>
         </Card>
+              </Grid>
       </Grid>
     </Container>
   );

@@ -6,7 +6,7 @@ import About from './about';
 import Projects from './projects';
 import Contact from './contact';
 import Footer from './footer';
-import Container from '@mui/material/Container';
+import { Link, animateScroll as scroll } from "react-scroll";
 
 function App() {
   const title = "Welcome to Stephen's Portfolio Site";

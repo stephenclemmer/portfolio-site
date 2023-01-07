@@ -27,7 +27,7 @@ export default function Welcome() {
         align='center'
         gutterBottom
       > 
-      I'm a software developer with a passion for understanding how users interact with products and services.
+      I'm a software developer with a passion for understanding how to turn customers into devoted fanatics.
       </Typography>
     </Container>
   );
