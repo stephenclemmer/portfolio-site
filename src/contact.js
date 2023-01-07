@@ -25,10 +25,30 @@ export default function Welcome() {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
 
+  const [nameError, setNameError] = useState(false);
+  const [emailError, setEmailError] = useState(false);
+  const [messageError, setMessageError] = useState(false);
+
   const handleSubmit = (e) => {
     e.preventDefault()
 
-    if (name && email) {
+    setNameError(false)
+    setEmailError(false)
+    setMessageError(false)
+
+    if (name === ''){
+      setNameError(true)
+    }
+
+    if (email === ''){
+      setEmailError(true)
+    }
+
+    if (message === ''){
+      setMessageError(true)
+    }
+
+    if (name && email && message) {
       console.log('Form has been \'submitted\'')
     }
   }
@@ -49,6 +69,7 @@ export default function Welcome() {
             variant="outlined"
             color="secondary"
             required
+            error={nameError}
           />
         </Grid>
         <Grid>
@@ -59,6 +80,7 @@ export default function Welcome() {
             variant="outlined"
             color="secondary"
             required
+            error={emailError}
           />
         </Grid>
         <Grid>
@@ -71,6 +93,7 @@ export default function Welcome() {
             required
             multiline
             rows='4'
+            error={messageError}
           />
         </Grid>
         <Button
