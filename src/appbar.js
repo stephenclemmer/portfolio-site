@@ -28,7 +28,11 @@ export default function ButtonAppBar() {
           <Button color="inherit">About</Button>
           <Button color="inherit">Projects</Button>
           <Button color="inherit">Contact</Button>
-          <Button color="inherit">Resume</Button>
+          <Button
+          onclick="window.open();" 
+          color="inherit"
+          
+          >Resume</Button>
         </Container>
         </Toolbar>
       </AppBar>

@@ -45,8 +45,16 @@ export default function Welcome() {
   return (
 
     <Container>
+      <Typography
+        variant='h3'
+        color='secondary'
+        align='center'
+        gutterBottom
+      >
+        Contact
+      </Typography>
       <FormControl>
-        <FormLabel>Contact</FormLabel>
+       
         <form
           noValidate
           autoComplete="off"
@@ -54,7 +62,6 @@ export default function Welcome() {
         >
           <Grid>
             <TextField
-              // className={classes.field} 
               onChange={(e) => setName(e.target.value)}
               label="Name"
               variant="outlined"
@@ -63,9 +70,9 @@ export default function Welcome() {
               error={nameError}
             />
           </Grid>
+          
           <Grid>
             <TextField
-              // className={classes.field} 
               onChange={(e) => setEmail(e.target.value)}
               label="Email"
               variant="outlined"
@@ -74,9 +81,9 @@ export default function Welcome() {
               error={emailError}
             />
           </Grid>
+          
           <Grid>
             <TextField
-              // className={classes.field}
               onChange={(e) => setMessage(e.target.value)}
               label="Message"
               variant="outlined"
