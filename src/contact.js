@@ -6,7 +6,6 @@ import Grid from '@mui/material/Grid';
 import { useState } from 'react';
 import Typography from '@mui/material/Typography';
 import { FormControl } from '@mui/material';
-import FormLabel from '@mui/material/FormLabel';
 
 export default function Welcome() {
 
@@ -44,7 +43,9 @@ export default function Welcome() {
 
   return (
 
-    <Container>
+    <Container
+      id="contact"
+    >
       <Typography
         variant='h3'
         color='secondary'
@@ -54,7 +55,7 @@ export default function Welcome() {
         Contact
       </Typography>
       <FormControl>
-       
+
         <form
           noValidate
           autoComplete="off"
@@ -70,7 +71,7 @@ export default function Welcome() {
               error={nameError}
             />
           </Grid>
-          
+
           <Grid>
             <TextField
               onChange={(e) => setEmail(e.target.value)}
@@ -81,7 +82,7 @@ export default function Welcome() {
               error={emailError}
             />
           </Grid>
-          
+
           <Grid>
             <TextField
               onChange={(e) => setMessage(e.target.value)}

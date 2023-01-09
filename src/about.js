@@ -6,7 +6,11 @@ import Grid from '@mui/material/Grid';
 export default function About() {
   return (
     <>
-      <Container maxWidth="sm">
+      <Container
+        id="about"
+        maxWidth="sm"
+        sx={{marginTop: "64px"}}
+      >
         <Typography
           variant='h3'
           color='secondary'
@@ -47,10 +51,10 @@ export default function About() {
 
               <Grid container>
                 <Grid item xs={12}>
-                Bootstrap
+                  Bootstrap
                 </Grid>
                 <Grid item xs={12}>
-                MongoDB
+                  MongoDB
                 </Grid>
                 <Grid item xs={12}>
                   AWS

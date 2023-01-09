@@ -3,7 +3,10 @@ import Typography from '@mui/material/Typography';
 
 export default function Welcome() {
   return (
-    <Container>
+    <Container
+      id="home"
+      sx={{marginTop: "64px"}}
+    >
       <Typography 
         variant='h3'
         color='secondary'
