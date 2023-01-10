@@ -5,9 +5,13 @@ export default function Welcome() {
   return (
     <Container
       id="home"
-      sx={{marginTop: "64px"}}
+      sx={{
+        paddingTop: "80px", 
+        width: "100%",
+        height: "300px"
+      }}
     >
-      <Typography 
+      <Typography
         variant='h3'
         color='secondary'
         align='center'
@@ -30,7 +34,7 @@ export default function Welcome() {
         align='center'
         gutterBottom
       > 
-      I'm a software developer with a passion for understanding how to turn customers into devoted fanatics.
+      a software developer passionate about turning customers into devoted fanatics.
       </Typography>
     </Container>
   );

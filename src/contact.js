@@ -45,6 +45,11 @@ export default function Welcome() {
 
     <Container
       id="contact"
+      sx={{
+        paddingTop: "80px",
+        // height: '300px',
+        // paddingBottom: "80px"
+      }}
     >
       <Typography
         variant='h3'

@@ -10,25 +10,35 @@ export default function Projects() {
   return (
     <Container
       id="projects"
+      maxWidth="100%"
+      sx={{
+        paddingTop: "80px"
+      }}
     >
       <Typography
         variant='h3'
         color='secondary'
-        align='center'
         gutterBottom
       >
         Projects
       </Typography>
+     
       <Grid container
-        alignItems="center"
-        spacing="6">
-
-        <Grid item>
-          <Card sx={{ maxWidth: 345 }}>
-            <CardActionArea>
+      >
+        <Grid item
+          margin="auto"
+        >
+          <Card 
+          sx={{
+            maxWidth: "400px",
+            height: "450px",
+          }}
+          >
+            <CardActionArea
+            >
               <CardMedia
                 component="img"
-                height="140"
+                height="220"
                 image={require('./assets/Library-of-things.png')}
                 alt="Library of Things"
               />
@@ -36,26 +46,44 @@ export default function Projects() {
                 <Typography gutterBottom variant="h5" component="div">
                   Library of Things
                 </Typography>
-                <Typography variant="body2" color="text.secondary">
+                <div
+                sx={{
+                  display: "flex", alignItems: "baseline" 
+                }}
+                >
+
+                <div>
+                  <Typography 
+                variant="body2" color="text.secondary">
                   Full-stack social app with secure log-in where users can store pictures, view other users' pictures, and communicate over chat.
+
+</Typography>
+                    </div>
+                    <div>
 
                   <Typography variant="body2" color="text.secondary">
                     Built with Supabase for postgres Database, authentication/authorization, and real-time chat capabilities, Material UI component library, Next.js, React, Vercel, and Cypress.
                   </Typography>
+                    </div>
 
-                </Typography>
+                    </div>
               </CardContent>
             </CardActionArea>
           </Card>
         </Grid>
 
-        <Grid item>
+        <Grid item
+        margin="auto"
+        >
 
-          <Card sx={{ maxWidth: 345 }}>
+          <Card sx={{ 
+            maxWidth: "400px", 
+            height: "450px"
+            }}>
             <CardActionArea>
               <CardMedia
                 component="img"
-                height="140"
+                height="220"
                 image={require('./assets/Alexa.png')}
                 alt="Amazon Alexa"
               />
@@ -76,13 +104,20 @@ export default function Projects() {
           </Card>
         </Grid>
 
-        <Grid item>
+        <Grid item
+        margin="auto"
+        >
 
-          <Card sx={{ maxWidth: 345 }}>
+          <Card 
+          sx={{ 
+            maxWidth: "400px", 
+            height: "450px"
+          }}
+          >
             <CardActionArea>
               <CardMedia
                 component="img"
-                height="140"
+                height="220"
                 image={require('./assets/TravelBytes.png')}
                 alt="TravelBytes"
               />
@@ -90,7 +125,8 @@ export default function Projects() {
                 <Typography gutterBottom variant="h5" component="div">
                   TravelBytes
                 </Typography>
-                <Typography variant="body2" color="text.secondary">
+                <Typography variant="body2" color="text.secondary"
+                >
                   A travel app that accesses multiple APIs, displays filtered data to the user, and allows a user to add and edit notes.
 
                   <Typography variant="body2" color="text.secondary">

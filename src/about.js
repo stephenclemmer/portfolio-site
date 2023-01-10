@@ -8,8 +8,8 @@ export default function About() {
     <>
       <Container
         id="about"
-        maxWidth="sm"
-        sx={{marginTop: "64px"}}
+        maxWidth="100%"
+        sx={{ paddingTop: "80px" }}
       >
         <Typography
           variant='h3'
@@ -19,17 +19,29 @@ export default function About() {
         >
           About Me
         </Typography>
-        <Container>
+        <Container
+          sx={{
+            width: "700px"
+          }}
+        >
           <Paper
             sx={{
               alignItems: 'left'
             }}
             elevation={0}>
-            <Container>
+            <Container
+              sx={{
+                height: "150px"
+              }}
+            >
               I'm a software developer with a passion for how users interact with products and services. I love software development because of its power to bring ideas from concept to reality with minimal resources, and I resonate with its culture of collaboration and creativity. I especially value the opportunities it provides to improve my skills and learn new things.
             </Container>
-            <Container>
-              I hold a degree in Sociology-Religion from the University of Massachusetts, which led me to work in entreprenurial environments as a project manager, product manager, and team leader. In 2022 I returned to school where I completed a five-month bootcamp for Advanced Software Development in Full-Stack JavaScript. some of the technologies that I've been working with recently include:
+            <Container
+              sx={{
+                height: "150px"
+              }}
+            >
+              I have worked in entreprenurial environments as a project manager, product manager, and team leader. In 2022 I returned to school where I completed a five-month bootcamp for Advanced Software Development in Full-Stack JavaScript. some of the technologies that I've been working with recently include:
             </Container>
 
             <Container>
