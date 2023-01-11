@@ -49,7 +49,6 @@ export default function Welcome() {
       sx={{
         paddingTop: "80px",
         margin: "auto"
-        // paddingBottom: "80px"
       }}
     >
       <Typography

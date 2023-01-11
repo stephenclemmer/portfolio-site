@@ -67,7 +67,7 @@ export default function About() {
                       paddingTop: "15px"
                     }}
                   >
-                    I value making applications that are accessible to all people, and I enjoy thinking about all of the different types of end-users who may encounter a product or service. I often ask myself what might be done to increase the value that a user receives from any given application, so that an end-user would feel compelled to share their outstanding experience with friends.
+                    I value making applications that are accessible to all people, and I enjoy thinking about all of the different types of people who may encounter a product or service I work on. For other programmers, I seek to leave a legacy of clean, human-readable code. For end users I often ask myself what might be done to increase the value that they receive from an application so that they might feel compelled to share their outstanding experience with their friends.
                   </Box>
                   <Box
 

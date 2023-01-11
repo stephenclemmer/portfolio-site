@@ -5,6 +5,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
+import Box from '@mui/material/Box';
 
 export default function Projects() {
   return (
@@ -22,17 +23,18 @@ export default function Projects() {
       >
         Projects
       </Typography>
-     
+
       <Grid container
       >
         <Grid item
           margin="auto"
         >
-          <Card 
-          sx={{
-            maxWidth: "400px",
-            height: "450px",
-          }}
+          <Card
+            sx={{
+              maxWidth: "400px",
+              height: "450px",
+              paddingTop: "10px"
+            }}
           >
             <CardActionArea
             >
@@ -47,39 +49,46 @@ export default function Projects() {
                   Library of Things
                 </Typography>
                 <div
-                sx={{
-                  display: "flex", alignItems: "baseline" 
-                }}
+                  sx={{
+                    display: "flex", alignItems: "baseline"
+                  }}
                 >
+                  <Box
+                    sx={{
+                      paddingTop: "10px"
+                    }}
+                  >
+                    <Typography
+                      variant="body2" color="text.secondary">
+                      Full-stack social app with secure log-in where users can store pictures, view other users' pictures, and communicate over chat.
+                    </Typography>
+                  </Box>
+                  <Box
+                    sx={{
+                      paddingTop: "15px"
+                    }}
+                  >
 
-                <div>
-                  <Typography 
-                variant="body2" color="text.secondary">
-                  Full-stack social app with secure log-in where users can store pictures, view other users' pictures, and communicate over chat.
+                    <Typography variant="body2" color="text.secondary">
+                      Built with Supabase for postgres Database, authentication/authorization, and real-time chat capabilities, Material UI component library, Next.js, React, Vercel, and Cypress.
+                    </Typography>
+                  </Box>
 
-</Typography>
-                    </div>
-                    <div>
-
-                  <Typography variant="body2" color="text.secondary">
-                    Built with Supabase for postgres Database, authentication/authorization, and real-time chat capabilities, Material UI component library, Next.js, React, Vercel, and Cypress.
-                  </Typography>
-                    </div>
-
-                    </div>
+                </div>
               </CardContent>
             </CardActionArea>
           </Card>
         </Grid>
 
         <Grid item
-        margin="auto"
+          margin="auto"
         >
 
-          <Card sx={{ 
-            maxWidth: "400px", 
-            height: "450px"
-            }}>
+          <Card sx={{
+            maxWidth: "400px",
+            height: "450px",
+            paddingTop: "10px"
+          }}>
             <CardActionArea>
               <CardMedia
                 component="img"
@@ -91,28 +100,39 @@ export default function Projects() {
                 <Typography gutterBottom variant="h5" component="div">
                   Tech Prep
                 </Typography>
-                <Typography variant="body2" color="text.secondary">
-                  A tech-jobs Amazon Alexa skill that emails users current job listings, and quizzes users with interview questions and coding problems.
 
+                <Box
+                  sx={{
+                    paddingTop: "10px"
+                  }}>
+                  <Typography variant="body2" color="text.secondary">
+                    A tech-jobs Amazon Alexa skill that emails users current job listings, and quizzes users with interview questions and coding problems.
+                  </Typography>
+                </Box>
+                <Box
+                  sx={{
+                    paddingTop: "15px"
+                  }}
+                >
                   <Typography variant="body2" color="text.secondary">
                     Built with AWS S3, Lambda, SNS, and Alexa Developer Console.
                   </Typography>
-
-                </Typography>
+                </Box>
               </CardContent>
             </CardActionArea>
           </Card>
         </Grid>
 
         <Grid item
-        margin="auto"
+          margin="auto"
         >
 
-          <Card 
-          sx={{ 
-            maxWidth: "400px", 
-            height: "450px"
-          }}
+          <Card
+            sx={{
+              maxWidth: "400px",
+              height: "450px",
+              paddingTop: "10px"
+            }}
           >
             <CardActionArea>
               <CardMedia
@@ -125,20 +145,31 @@ export default function Projects() {
                 <Typography gutterBottom variant="h5" component="div">
                   TravelBytes
                 </Typography>
-                <Typography variant="body2" color="text.secondary"
+                <Box
+                  sx={{
+                    paddingTop: "10px"
+                  }}
                 >
-                  A travel app that accesses multiple APIs, displays filtered data to the user, and allows a user to add and edit notes.
 
+                  <Typography variant="body2" color="text.secondary"
+                  >
+                    A travel app that accesses multiple APIs, displays filtered data to the user, and allows a user to add and edit notes.
+                  </Typography>
+                </Box>
+                <Box
+                  sx={{
+                    paddingTop: "15px"
+                  }}
+                >
                   <Typography variant="body2" color="text.secondary">
                     Built with HTML, CSS, JavaScript, React, Bootstrap, MongoDB, Mongoose, and Axios.
                   </Typography>
-
-                </Typography>
+                </Box>
               </CardContent>
             </CardActionArea>
           </Card>
         </Grid>
       </Grid>
-    </Container>
+    </Container >
   );
 }
