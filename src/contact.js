@@ -157,7 +157,7 @@ sx={{
 }}
 >
 
-      <Typography onClick={() => window.location = 'mailto:yourmail@domain.com'}>
+      <Typography onClick={() => window.location = 'mailto:stephenjclemmer@gmail.com'}>
         or email me at StephenJClemmer@gmail.com
       </Typography>
 </Box>

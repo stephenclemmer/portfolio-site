@@ -67,7 +67,7 @@ export default function About() {
                       paddingTop: "15px"
                     }}
                   >
-                    I value making applications that are accessible to all people, and I enjoy thinking about all of the different types of people who may encounter a product or service I work on. For other programmers, I seek to leave a legacy of clean, human-readable code. For end users I often ask myself what might be done to increase the value that they receive from an application so that they might feel compelled to share their outstanding experience with their friends.
+                    I value making applications that are accessible to all people, and I enjoy thinking about all of the different types of people who may encounter a product or service I work on. For other programmers, I seek to leave a legacy of clean, human-readable code. For end-users I often ask myself what might be done to increase the value that they receive from an application so that they might feel compelled to share their outstanding experience with their friends.
                   </Box>
                   <Box
 
@@ -76,7 +76,7 @@ export default function About() {
                       paddingTop: "15px"
                     }}
                   >
-                    I have worked in entreprenurial environments as a project manager, product manager, and team leader. In 2022 I returned to school where I completed a five-month bootcamp for Advanced Software Development in Full-Stack JavaScript. some of the technologies that I've been working with recently include:
+                    I have worked in entreprenurial environments as a project manager, product manager, and team leader. In 2022 I completed a five-month bootcamp for Advanced Software Development in Full-Stack JavaScript. Some of the technologies that I've been working with recently include:
                   </Box>
                 </Container>
 
