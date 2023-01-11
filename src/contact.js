@@ -6,6 +6,7 @@ import Grid from '@mui/material/Grid';
 import { useState } from 'react';
 import Typography from '@mui/material/Typography';
 import { FormControl } from '@mui/material';
+import Box from '@mui/material/Box';
 
 export default function Welcome() {
 
@@ -47,7 +48,7 @@ export default function Welcome() {
       id="contact"
       sx={{
         paddingTop: "80px",
-        // height: '300px',
+        margin: "auto"
         // paddingBottom: "80px"
       }}
     >
@@ -59,36 +60,68 @@ export default function Welcome() {
       >
         Contact
       </Typography>
-      <FormControl>
+      <FormControl
+        margin="normal"
+      >
 
         <form
           noValidate
           autoComplete="off"
           onSubmit={handleSubmit}
+          // margin="auto"
         >
           <Grid>
+          <Box
+      sx={{
+        display: 'flex',
+        flexDirection: 'column',
+        '& .MuiTextField-root': { width: '35ch' },
+      }}
+    >
             <TextField
               onChange={(e) => setName(e.target.value)}
+              size="small"
+              // margin="dense"
               label="Name"
               variant="outlined"
               color="secondary"
               required
               error={nameError}
-            />
+              margin="auto"
+              />
+            </Box>
           </Grid>
 
           <Grid>
+          <Box
+      sx={{
+        display: 'flex',
+        flexDirection: 'column',
+        '& .MuiTextField-root': { width: '35ch' },
+        paddingTop: "10px"
+      }}
+    >
             <TextField
               onChange={(e) => setEmail(e.target.value)}
+              size="small"
               label="Email"
               variant="outlined"
               color="secondary"
               required
               error={emailError}
             />
+            </Box>
           </Grid>
 
           <Grid>
+          <Box
+      sx={{
+        display: 'flex',
+        flexDirection: 'column',
+        '& .MuiTextField-root': { width: '35ch' },
+        paddingTop: "10px"
+      }}
+    >
             <TextField
               onChange={(e) => setMessage(e.target.value)}
               label="Message"
@@ -99,21 +132,36 @@ export default function Welcome() {
               rows='4'
               error={messageError}
             />
+            </Box>
           </Grid>
+          <Box
+          sx={{
+            paddingTop: "10px"
+          }}
+          >
+
           <Button
             variant="contained"
             color="primary"
             type="submit"
-          >Submit
+            >Submit
             <KeyboardArrowRightOutlined />
           </Button>
+            </Box>
 
         </form>
       </FormControl>
 
+<Box
+sx={{
+  paddingTop: "10px"
+}}
+>
+
       <Typography>
         or email me at StephenJClemmer@gmail.com
       </Typography>
+</Box>
 
     </Container>
 

@@ -34,7 +34,7 @@ export default function Welcome() {
         align='center'
         gutterBottom
       > 
-      a software developer passionate about turning customers into devoted fanatics.
+      a software developer passionate about what it takes to turn customers into devoted fanatics.
       </Typography>
     </Container>
   );
