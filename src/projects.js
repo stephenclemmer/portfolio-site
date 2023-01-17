@@ -37,6 +37,11 @@ export default function Projects() {
             }}
           >
             <CardActionArea
+              href={'https://library-of-things.vercel.app'}
+              target='_blank'
+              sx={{
+                height: '100%'
+              }}
             >
               <CardMedia
                 component="img"
@@ -89,7 +94,13 @@ export default function Projects() {
             height: "450px",
             paddingTop: "10px"
           }}>
-            <CardActionArea>
+            <CardActionArea
+              href={'https://youtu.be/W52HQTDmO80'}
+              target='_blank'
+              sx={{
+                height: '100%'
+              }}
+            >
               <CardMedia
                 component="img"
                 height="220"
@@ -134,7 +145,13 @@ export default function Projects() {
               paddingTop: "10px"
             }}
           >
-            <CardActionArea>
+            <CardActionArea
+              href={'https://travelbytes.netlify.app'}
+              target='_blank'
+              sx={{
+                height: '100%'
+              }}
+            >
               <CardMedia
                 component="img"
                 height="220"

@@ -56,7 +56,7 @@ export default function About() {
                       height: "auto"
                     }}
                   >
-                    Hi, I'm Stephen. I love software development's culture of collaboration creativity, and continuous improvement, and I value its ability to bring ideas from concept to reality with minimal resources. Each day, software development challenges me to improve my skills and learn new things.
+                    Hi, I'm Stephen, a full-stack software developer. I love software development's culture of collaboration, creativity, and continuous improvement, and I value its ability to bring ideas from concept to reality with minimal resources. Each day, software development challenges me to improve my skills and learn new things.
                   </Box>
                 </Container>
                 <Container>

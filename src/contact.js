@@ -8,7 +8,14 @@ import Typography from '@mui/material/Typography';
 import { FormControl } from '@mui/material';
 import Box from '@mui/material/Box';
 
-export default function Welcome() {
+import React, { useRef } from 'react';
+import emailjs from 'emailjs-com';
+
+// to install EmailJS dependencies, in terminal, type the following:
+// npm install emailjs-com --save
+
+
+export default function Contact() {
 
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -18,8 +25,10 @@ export default function Welcome() {
   const [emailError, setEmailError] = useState(false);
   const [messageError, setMessageError] = useState(false);
 
-  const handleSubmit = (e) => {
-    e.preventDefault()
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
 
     setNameError(false)
     setEmailError(false)
@@ -38,9 +47,15 @@ export default function Welcome() {
     }
 
     if (name && email && message) {
-      console.log('Form has been \'submitted\'')
+      emailjs.sendForm('portfolioSite', 'Portfolio_Contact_Form', form.current, 'zOUvnfhHVplUtepc8')
+        .then((result) => {
+          console.log(result.text);
+        }, (error) => {
+          console.log(error.text);
+        });
+      form.current.reset();
     }
-  }
+  };
 
   return (
 
@@ -66,101 +81,105 @@ export default function Welcome() {
         <form
           noValidate
           autoComplete="off"
-          onSubmit={handleSubmit}
-          // margin="auto"
+          ref={form}
+          onSubmit={sendEmail}
+        // margin="auto"
         >
           <Grid>
-          <Box
-      sx={{
-        display: 'flex',
-        flexDirection: 'column',
-        '& .MuiTextField-root': { width: '35ch' },
-      }}
-    >
-            <TextField
-              onChange={(e) => setName(e.target.value)}
-              size="small"
-              // margin="dense"
-              label="Name"
-              variant="outlined"
-              color="secondary"
-              required
-              error={nameError}
-              margin="auto"
+            <Box
+              sx={{
+                display: 'flex',
+                flexDirection: 'column',
+                '& .MuiTextField-root': { width: '35ch' },
+              }}
+            >
+              <TextField
+                onChange={(e) => setName(e.target.value)}
+                size="small"
+                // margin="dense"
+                label="Name"
+                name="Name"
+                variant="outlined"
+                color="secondary"
+                required
+                error={nameError}
+                margin="auto"
               />
             </Box>
           </Grid>
 
           <Grid>
-          <Box
-      sx={{
-        display: 'flex',
-        flexDirection: 'column',
-        '& .MuiTextField-root': { width: '35ch' },
-        paddingTop: "10px"
-      }}
-    >
-            <TextField
-              onChange={(e) => setEmail(e.target.value)}
-              size="small"
-              label="Email"
-              variant="outlined"
-              color="secondary"
-              required
-              error={emailError}
-            />
+            <Box
+              sx={{
+                display: 'flex',
+                flexDirection: 'column',
+                '& .MuiTextField-root': { width: '35ch' },
+                paddingTop: "10px"
+              }}
+            >
+              <TextField
+                onChange={(e) => setEmail(e.target.value)}
+                size="small"
+                label="Email"
+                name="Email"
+                variant="outlined"
+                color="secondary"
+                required
+                error={emailError}
+              />
             </Box>
           </Grid>
 
           <Grid>
-          <Box
-      sx={{
-        display: 'flex',
-        flexDirection: 'column',
-        '& .MuiTextField-root': { width: '35ch' },
-        paddingTop: "10px"
-      }}
-    >
-            <TextField
-              onChange={(e) => setMessage(e.target.value)}
-              label="Message"
-              variant="outlined"
-              color="secondary"
-              required
-              multiline
-              rows='4'
-              error={messageError}
-            />
+            <Box
+              sx={{
+                display: 'flex',
+                flexDirection: 'column',
+                '& .MuiTextField-root': { width: '35ch' },
+                paddingTop: "10px"
+              }}
+            >
+              <TextField
+                onChange={(e) => setMessage(e.target.value)}
+                label="Message"
+                name="Message"
+                variant="outlined"
+                color="secondary"
+                required
+                multiline
+                rows='4'
+                error={messageError}
+              />
             </Box>
           </Grid>
           <Box
-          sx={{
-            paddingTop: "10px"
-          }}
+            sx={{
+              paddingTop: "10px"
+            }}
           >
 
-          <Button
-            variant="contained"
-            color="primary"
-            type="submit"
+            <Button
+              variant="contained"
+              color="primary"
+              type="submit"
             >Submit
-            <KeyboardArrowRightOutlined />
-          </Button>
-            </Box>
+              <KeyboardArrowRightOutlined />
+            </Button>
+          </Box>
 
         </form>
       </FormControl>
 
-<Box
-sx={{
-  paddingTop: "10px"
-}}
->
+      <Box
+        sx={{
+          paddingTop: "10px"
+        }}
+      >
 
-      <Typography onClick={() => window.location = 'mailto:stephenjclemmer@gmail.com'}>
-        or email me at StephenJClemmer@gmail.com
-      </Typography>
-</Box>
+        <Typography onClick={() => window.location = 'mailto:stephenjclemmer@gmail.com'}>
+          or email me at StephenJClemmer@gmail.com
+        </Typography>
+      </Box>
 
     </Container>
 
