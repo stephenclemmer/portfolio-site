@@ -7,15 +7,19 @@ import { useState } from 'react';
 import Typography from '@mui/material/Typography';
 import { FormControl } from '@mui/material';
 import Box from '@mui/material/Box';
-
 import React, { useRef } from 'react';
 import emailjs from 'emailjs-com';
+
+// ___________________________
+import Dialog from '@mui/material/Dialog';
+import DialogActions from '@mui/material/DialogActions';
+import DialogTitle from '@mui/material/DialogTitle';
+// ___________________________
 
 // to install EmailJS dependencies, in terminal, type the following:
 // npm install emailjs-com --save
 
-
-export default function Contact() {
+function Contact() {
 
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -25,7 +29,13 @@ export default function Contact() {
   const [emailError, setEmailError] = useState(false);
   const [messageError, setMessageError] = useState(false);
 
+  const [open, setOpen] = useState(false);
+
   const form = useRef();
+
+  const handleClose = () => {
+    setOpen(false);
+  };
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -53,7 +63,16 @@ export default function Contact() {
         }, (error) => {
           console.log(error.text);
         });
-      form.current.reset();
+      // form.current.reset();
+      setName('');
+      setEmail('');
+      setMessage('');
+
+      // const [email, setEmail] = useState('');
+      // const [message, setMessage] = useState('');
+      setOpen(true);
+      // form.current.reset();
+      // document.getElementById("myForm").reset();
     }
   };
 
@@ -83,6 +102,7 @@ export default function Contact() {
           autoComplete="off"
           ref={form}
           onSubmit={sendEmail}
+          // id="myForm"
         // margin="auto"
         >
           <Grid>
@@ -104,6 +124,7 @@ export default function Contact() {
                 required
                 error={nameError}
                 margin="auto"
+                value={name}
               />
             </Box>
           </Grid>
@@ -126,6 +147,7 @@ export default function Contact() {
                 color="secondary"
                 required
                 error={emailError}
+                value={email}
               />
             </Box>
           </Grid>
@@ -149,6 +171,7 @@ export default function Contact() {
                 multiline
                 rows='4'
                 error={messageError}
+                value={message}
               />
             </Box>
           </Grid>
@@ -181,7 +204,25 @@ export default function Contact() {
         </Typography>
       </Box>
 
+{/* _______________________Confirmation Dialog___________________ */}
+<div>
+      <Dialog
+        open={open}
+        onClose={handleClose}
+      >
+        <DialogTitle >
+           Your message has been sent to stephenjclemmer@gmail.com
+        </DialogTitle>
+        <DialogActions>
+          <Button onClick={handleClose}>Close</Button>
+        </DialogActions>
+      </Dialog>
+    </div>
+{/* __________________________________________ */}
+
     </Container>
 
   );
 }
+
+export default Contact;

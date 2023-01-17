@@ -7,6 +7,7 @@ import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
+import Logo from './logo';
 import ButtonGroup from '@mui/material/ButtonGroup'
 import { Link, animateScroll as scroll } from "react-scroll";
 // import { CssBaseline } from '@mui/material';
@@ -23,7 +24,7 @@ export default function ButtonAppBar() {
         }}
       >
         <Toolbar>
-          <IconButton
+          <Logo
             href="#home"
             // marginBottom="64px"
             size="large"
@@ -33,7 +34,7 @@ export default function ButtonAppBar() {
             sx={{ mr: 2 }}
           >
             <MenuIcon />
-          </IconButton>
+          </Logo>
 
           <Container style={{ textAlign: 'right' }}>
             <Button href="#about" color="inherit">About</Button>
