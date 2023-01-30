@@ -111,6 +111,7 @@ function Contact() {
                 display: 'flex',
                 flexDirection: 'column',
                 '& .MuiTextField-root': { width: '35ch' },
+                background: '484d5c'
               }}
             >
               <TextField

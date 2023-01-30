@@ -7,9 +7,16 @@ export default function Footer() {
       <Container 
         sx={{
           marginTop: '64px',
+          background: '#484d5c'
         }}
       >
-          <Paper sx={{ bottom: 0, left: 0, right: 0 }} elevation={0}> &copy; 2023</Paper>
+          <Paper sx={{ 
+            color: '#c0ccd4',
+            bottom: 0, 
+            left: 0, 
+            right: 0,
+            bgcolor: '#484d5c' 
+            }} elevation={0}> &copy; 2023</Paper>
        
       </Container>
     </>
