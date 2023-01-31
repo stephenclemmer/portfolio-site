@@ -33,14 +33,17 @@ export default function Projects() {
             sx={{
               maxWidth: "400px",
               height: "450px",
-              paddingTop: "10px"
+              paddingTop: "10px",
+              borderRadius: 4,
             }}
           >
             <CardActionArea
               href={'https://library-of-things.vercel.app'}
               target='_blank'
+              borderRadius='4'
               sx={{
-                height: '100%'
+                height: '100%',
+                backgroundColor: '#000',
               }}
             >
               <CardMedia
@@ -60,21 +63,26 @@ export default function Projects() {
                 >
                   <Box
                     sx={{
-                      paddingTop: "10px"
+                      paddingTop: "10px",
                     }}
                   >
                     <Typography
-                      variant="body2" color="text.secondary">
+                      variant="body2" 
+                      color="text.secondary"
+                      >
                       Full-stack social app with secure log-in where users can store pictures, view other users' pictures, and communicate over chat.
                     </Typography>
                   </Box>
                   <Box
                     sx={{
-                      paddingTop: "15px"
+                      paddingTop: "15px",
                     }}
                   >
 
-                    <Typography variant="body2" color="text.secondary">
+                    <Typography 
+                      variant="body2" 
+                      color="text.secondary"
+                      >
                       Built with Supabase for postgres Database, authentication/authorization, and real-time chat capabilities, Material UI component library, Next.js, React, Vercel, and Cypress.
                     </Typography>
                   </Box>
@@ -92,13 +100,15 @@ export default function Projects() {
           <Card sx={{
             maxWidth: "400px",
             height: "450px",
-            paddingTop: "10px"
+            paddingTop: "10px",
+            borderRadius: 4
           }}>
             <CardActionArea
               href={'https://youtu.be/W52HQTDmO80'}
               target='_blank'
               sx={{
-                height: '100%'
+                height: '100%',
+                backgroundColor: '#000',
               }}
             >
               <CardMedia
@@ -142,14 +152,16 @@ export default function Projects() {
             sx={{
               maxWidth: "400px",
               height: "450px",
-              paddingTop: "10px"
+              paddingTop: "10px",
+              borderRadius: 4
             }}
           >
             <CardActionArea
               href={'https://travelbytes.netlify.app'}
               target='_blank'
               sx={{
-                height: '100%'
+                height: '100%',
+                backgroundColor: '#000',
               }}
             >
               <CardMedia

@@ -12,6 +12,7 @@ import { createTheme, ThemeProvider } from '@mui/material'
 import CssBaseline from '@mui/material/CssBaseline';
 
 const theme = createTheme({
+
   palette: {
     text: {
       primary: '#c0ccd4',
@@ -24,7 +25,7 @@ const theme = createTheme({
 
     primary: 
     {
-      main: '#86bbd8',
+      main: '#000',
       contrast: '484d5c'
     },
 
@@ -34,10 +35,14 @@ const theme = createTheme({
     },
   },
 
-  typography: {
+  Typography: {
     h6: {
      color: '#484d5c'
     }
+  },
+
+  TextField: {
+    color: '#fff'
   }
 })
 

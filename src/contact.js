@@ -5,7 +5,7 @@ import TextField from '@mui/material/TextField';
 import Grid from '@mui/material/Grid';
 import { useState } from 'react';
 import Typography from '@mui/material/Typography';
-import { FormControl } from '@mui/material';
+import { FormControl, makeStyles } from '@mui/material';
 import Box from '@mui/material/Box';
 import React, { useRef } from 'react';
 import emailjs from 'emailjs-com';
@@ -14,10 +14,13 @@ import emailjs from 'emailjs-com';
 import Dialog from '@mui/material/Dialog';
 import DialogActions from '@mui/material/DialogActions';
 import DialogTitle from '@mui/material/DialogTitle';
+import { ImportantDevices } from '@mui/icons-material';
 // ___________________________
 
 // to install EmailJS dependencies, in terminal, type the following:
 // npm install emailjs-com --save
+
+
 
 function Contact() {
 
@@ -115,6 +118,10 @@ function Contact() {
               }}
             >
               <TextField
+              sx={{
+                backgroundColor: '#000',
+                borderRadius: 1.0,
+              }}
                 onChange={(e) => setName(e.target.value)}
                 size="small"
                 // margin="dense"
@@ -140,6 +147,11 @@ function Contact() {
               }}
             >
               <TextField
+              sx={{
+                backgroundColor: '#000',
+                borderRadius: 1.0,
+              }}
+                // inputProps={{ style: { color: "red" } }}
                 onChange={(e) => setEmail(e.target.value)}
                 size="small"
                 label="Email"
@@ -159,10 +171,14 @@ function Contact() {
                 display: 'flex',
                 flexDirection: 'column',
                 '& .MuiTextField-root': { width: '35ch' },
-                paddingTop: "10px"
+                paddingTop: "10px",
               }}
             >
               <TextField
+              sx={{
+                backgroundColor: '#000',
+                borderRadius: 1,
+              }}
                 onChange={(e) => setMessage(e.target.value)}
                 label="Message"
                 name="Message"
@@ -183,6 +199,10 @@ function Contact() {
           >
 
             <Button
+            sx={{
+              backgroundColor: 'green',
+              borderRadius: 4
+            }}
               variant="contained"
               color="primary"
               type="submit"

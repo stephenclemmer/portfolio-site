@@ -6,7 +6,11 @@ import Button from '@mui/material/Button';
 export default function Logo() {
   return (
     <>
-    <Button href="#home" color="inherit">SC</Button>
+    <Button href="#home" color="inherit">
+      <Typography
+      variant="h6"
+      >SC</Typography>
+      </Button>
     </>
   );
 }

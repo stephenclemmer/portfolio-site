@@ -29,9 +29,14 @@ export default function Welcome() {
       </Typography>
 
       <Typography 
+      sx={{
+        backgroundColor: '#000',
+        borderRadius: 4
+      }}
         variant='h6'
         color='secondary'
         align='center'
+        width='auto'
         gutterBottom
       > 
       a software developer passionate about what it takes to turn customers into devoted fanatics.
