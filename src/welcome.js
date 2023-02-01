@@ -39,7 +39,7 @@ export default function Welcome() {
         width='auto'
         gutterBottom
       > 
-      a software developer passionate about what it takes to turn customers into devoted fanatics.
+      Let's turn your customers into devoted fanatics.
       </Typography>
     </Container>
   );

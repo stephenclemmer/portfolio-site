@@ -32,7 +32,7 @@ export default function Projects() {
           <Card
             sx={{
               maxWidth: "400px",
-              height: "450px",
+              height: "600px",
               paddingTop: "10px",
               borderRadius: 4,
             }}
@@ -53,7 +53,7 @@ export default function Projects() {
                 alt="Library of Things"
               />
               <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
+                <Typography gutterBottom variant="h4" component="div">
                   Library of Things
                 </Typography>
                 <div
@@ -67,9 +67,10 @@ export default function Projects() {
                     }}
                   >
                     <Typography
-                      variant="body2" 
+                      // variant="body2"
+                      variant="h6" 
                       color="text.secondary"
-                      >
+                    >
                       Full-stack social app with secure log-in where users can store pictures, view other users' pictures, and communicate over chat.
                     </Typography>
                   </Box>
@@ -79,10 +80,11 @@ export default function Projects() {
                     }}
                   >
 
-                    <Typography 
-                      variant="body2" 
+                    <Typography
+                      variant="body2"
+                      // variant="h6" 
                       color="text.secondary"
-                      >
+                    >
                       Built with Supabase for postgres Database, authentication/authorization, and real-time chat capabilities, Material UI component library, Next.js, React, Vercel, and Cypress.
                     </Typography>
                   </Box>
@@ -99,7 +101,7 @@ export default function Projects() {
 
           <Card sx={{
             maxWidth: "400px",
-            height: "450px",
+            height: "600px",
             paddingTop: "10px",
             borderRadius: 4
           }}>
@@ -118,7 +120,7 @@ export default function Projects() {
                 alt="Amazon Alexa"
               />
               <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
+                <Typography gutterBottom variant="h4" component="div">
                   Tech Prep
                 </Typography>
 
@@ -126,7 +128,10 @@ export default function Projects() {
                   sx={{
                     paddingTop: "10px"
                   }}>
-                  <Typography variant="body2" color="text.secondary">
+                  <Typography 
+                  // variant="body2" 
+                  variant="h6" 
+                  color="text.secondary">
                     A tech-jobs Amazon Alexa skill that emails users current job listings, and quizzes users with interview questions and coding problems.
                   </Typography>
                 </Box>
@@ -151,7 +156,7 @@ export default function Projects() {
           <Card
             sx={{
               maxWidth: "400px",
-              height: "450px",
+              height: "600px",
               paddingTop: "10px",
               borderRadius: 4
             }}
@@ -171,7 +176,7 @@ export default function Projects() {
                 alt="TravelBytes"
               />
               <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
+                <Typography gutterBottom variant="h4" component="div">
                   TravelBytes
                 </Typography>
                 <Box
@@ -180,7 +185,10 @@ export default function Projects() {
                   }}
                 >
 
-                  <Typography variant="body2" color="text.secondary"
+                  <Typography
+                    // variant="body2" 
+                    variant="h6"
+                    color="text.secondary"
                   >
                     A travel app that accesses multiple APIs, displays filtered data to the user, and allows a user to add and edit notes.
                   </Typography>
@@ -190,7 +198,10 @@ export default function Projects() {
                     paddingTop: "15px"
                   }}
                 >
-                  <Typography variant="body2" color="text.secondary">
+                  <Typography
+                    variant="body2" 
+                    // variant="h6"
+                    color="text.secondary">
                     Built with HTML, CSS, JavaScript, React, Bootstrap, MongoDB, Mongoose, and Axios.
                   </Typography>
                 </Box>
