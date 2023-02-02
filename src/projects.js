@@ -70,6 +70,7 @@ export default function Projects() {
                       // variant="body2"
                       variant="h6" 
                       color="text.secondary"
+                      align="left"
                     >
                       Full-stack social app with secure log-in where users can store pictures, view other users' pictures, and communicate over chat.
                     </Typography>
@@ -79,10 +80,8 @@ export default function Projects() {
                       paddingTop: "15px",
                     }}
                   >
-
                     <Typography
                       variant="body2"
-                      // variant="h6" 
                       color="text.secondary"
                     >
                       Built with Supabase for postgres Database, authentication/authorization, and real-time chat capabilities, Material UI component library, Next.js, React, Vercel, and Cypress.
@@ -130,7 +129,9 @@ export default function Projects() {
                   }}>
                   <Typography 
                   variant="h6" 
-                  color="text.secondary">
+                  color="text.secondary"
+                  align="left"
+                  >
                     A tech-jobs Amazon Alexa skill that emails users current job listings, and quizzes users with interview questions and coding problems.
                   </Typography>
                 </Box>
@@ -187,6 +188,7 @@ export default function Projects() {
                   <Typography
                     variant="h6"
                     color="text.secondary"
+                    align="left"
                   >
                     A travel app that accesses multiple APIs, displays filtered data to the user, and allows a user to add and edit notes.
                   </Typography>
