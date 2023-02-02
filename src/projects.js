@@ -129,7 +129,6 @@ export default function Projects() {
                     paddingTop: "10px"
                   }}>
                   <Typography 
-                  // variant="body2" 
                   variant="h6" 
                   color="text.secondary">
                     A tech-jobs Amazon Alexa skill that emails users current job listings, and quizzes users with interview questions and coding problems.
@@ -186,7 +185,6 @@ export default function Projects() {
                 >
 
                   <Typography
-                    // variant="body2" 
                     variant="h6"
                     color="text.secondary"
                   >
@@ -200,7 +198,6 @@ export default function Projects() {
                 >
                   <Typography
                     variant="body2" 
-                    // variant="h6"
                     color="text.secondary">
                     Built with HTML, CSS, JavaScript, React, Bootstrap, MongoDB, Mongoose, and Axios.
                   </Typography>

@@ -3,7 +3,6 @@ import Paper from '@mui/material/Paper';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/system/Box';
-import { autocompleteClasses } from '@mui/material';
 
 export default function About() {
   return (
@@ -11,12 +10,17 @@ export default function About() {
       <Container
         id="about"
         maxWidth="100%"
-        sx={{ paddingTop: "80px" }}
+        margin="auto"
+        sx={{
+          paddingTop: "80px",
+          margin: "auto"
+        }}
       >
         <Box
           sx={{
             height: "auto",
-            width: "auto"
+            width: "auto",
+            align: "center"
           }}
         >
           <Typography
@@ -57,12 +61,30 @@ export default function About() {
                     }}
                   >
                     <Typography
-                    variant="h6"
+                      align="left"
+                      variant="h6"
                     >
-                    Hi, I'm Stephen, a full-stack software developer. I love software development's culture of collaboration, creativity, and continuous improvement, and I value its ability to bring ideas from concept to reality with minimal resources. Each day, software development challenges me to improve my skills and learn new things.
+                      Hi, I'm Stephen, a full-stack software developer.
                     </Typography>
                   </Box>
                 </Container>
+
+                <Container>
+                  <Box
+                    sx={{
+                      height: "auto",
+                      margin: 2
+                    }}
+                  >
+                    <Typography
+                      align="left"
+                      variant="h6"
+                    >
+                      I love software development's culture of collaboration, creativity, and continuous improvement. I get excited about its potential to bring ideas from concept to reality with minimal resources.
+                    </Typography>
+                  </Box>
+                </Container>
+
                 <Container>
                   <Box
 
@@ -73,22 +95,25 @@ export default function About() {
                     }}
                   >
                     <Typography
-                    variant="h6"
+                      variant="h6"
+                      align="left"
                     >
-                    I value making applications that are accessible to all people, and I enjoy thinking about all of the different types of people who may encounter a product or service I work on. For other programmers, I seek to leave a legacy of clean, human-readable code. For end-users I often ask myself what might be done to increase the value that they receive from an application so that they might feel compelled to share their outstanding experience with their friends.
-                  </Typography>
+                      I value making applications that are accessible. For end-users I seek to improve an application's utility so users will feel compelled to share their experience with friends. For other programmers, I seek to leave a legacy of clean, human-readable code.
+                    </Typography>
                   </Box>
                   <Box
 
                     sx={{
                       height: "auto",
-                      paddingTop: "15px"
+                      paddingTop: "15px",
+                      margin: 2
                     }}
                   >
                     <Typography
-                    variant="h6"
+                      variant="h6"
+                      align="left"
                     >
-                    I have worked in entreprenurial environments as a project manager, product manager, and team leader. In 2022 I completed a five-month bootcamp for Advanced Software Development in Full-Stack JavaScript. Some of the technologies that I've been working with recently include:
+                      I have worked in entreprenurial environments as a project manager, product manager, and team leader. In 2022 I completed a five-month bootcamp for Advanced Software Development in Full-Stack JavaScript. Some of the technologies that I've been working with recently include:
                     </Typography>
                   </Box>
                 </Container>
@@ -110,10 +135,10 @@ export default function About() {
                   >
                     <Grid container>
                       <ul>
-                      <li><Typography variant="h6">JavaScript</Typography></li>
-                      <li><Typography variant="h6">TypeScript</Typography></li>
-                      <li><Typography variant="h6">React</Typography></li>
-                      <li><Typography variant="h6">MaterialUI</Typography></li>
+                        <li><Typography variant="h6" align="left">JavaScript</Typography></li>
+                        <li><Typography variant="h6" align="left">TypeScript</Typography></li>
+                        <li><Typography variant="h6" align="left">React</Typography></li>
+                        <li><Typography variant="h6" align="left">MaterialUI</Typography></li>
                       </ul>
                     </Grid>
                   </Box>
@@ -125,10 +150,40 @@ export default function About() {
                   >
                     <Grid container>
                       <ul>
-                        <li><Typography variant="h6">Bootstrap</Typography></li>
-                        <li><Typography variant="h6">MongoDB</Typography></li>
-                        <li><Typography variant="h6">AWS</Typography></li>
-                        <li><Typography variant="h6">Axios</Typography></li>
+                        <li><Typography variant="h6" align="left">Node.js</Typography></li>
+                        <li><Typography variant="h6" align="left">Express</Typography></li>
+                        <li><Typography variant="h6" align="left">Postgres</Typography></li>
+                        <li><Typography variant="h6" align="left">Socket.io</Typography></li>
+                      </ul>
+                    </Grid>
+                  </Box>
+                  <Box
+                    sx={{
+                      height: "auto",
+                      margin: "auto"
+                    }}
+                  >
+                    <Grid container>
+                      <ul>
+                        <li><Typography variant="h6" align="left">AWS S3</Typography></li>
+                        <li><Typography variant="h6" align="left">AWS EC2</Typography></li>
+                        <li><Typography variant="h6" align="left">AWS Lambda</Typography></li>
+                        <li><Typography variant="h6" align="left">Elastic Beanstalk</Typography></li>
+                      </ul>
+                    </Grid>
+                  </Box>
+                  <Box
+                    sx={{
+                      height: "auto",
+                      margin: "auto"
+                    }}
+                  >
+                    <Grid container>
+                      <ul>
+                        <li><Typography variant="h6" align="left">Bootstrap</Typography></li>
+                        <li><Typography variant="h6" align="left">MongoDB</Typography></li>
+                        <li><Typography variant="h6" align="left">DynamoDB</Typography></li>
+                        <li><Typography variant="h6" align="left">Axios</Typography></li>
                       </ul>
                     </Grid>
                   </Box>

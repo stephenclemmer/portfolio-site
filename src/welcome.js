@@ -25,15 +25,15 @@ export default function Welcome() {
         align='center'
         gutterBottom
       > 
-      Stephen Clemmer
+      Stephen Clemmer.
       </Typography>
 
       <Typography 
       sx={{
-        backgroundColor: '#000',
+        // backgroundColor: '#000',
         borderRadius: 4
       }}
-        variant='h6'
+        variant='h5'
         color='secondary'
         align='center'
         width='auto'
