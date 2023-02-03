@@ -25,6 +25,7 @@ export default function ButtonAppBar() {
       >
         <Toolbar>
           <Logo
+            alt="return to the start of the page"
             href="#home"
             // marginBottom="64px"
             size="large"
