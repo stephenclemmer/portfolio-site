@@ -9,6 +9,7 @@ import { FormControl, makeStyles } from '@mui/material';
 import Box from '@mui/material/Box';
 import React, { useRef } from 'react';
 import emailjs from 'emailjs-com';
+import FormLabel from '@mui/material/FormLabel';
 
 // ___________________________
 import Dialog from '@mui/material/Dialog';
@@ -97,6 +98,9 @@ function Contact() {
       >
         Contact
       </Typography>
+      
+      <FormLabel></FormLabel>
+      
       <FormControl
         margin="normal"
       >

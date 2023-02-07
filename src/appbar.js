@@ -45,6 +45,7 @@ export default function ButtonAppBar() {
               href={require('./assets/Stephen-Clemmer-Resume 1_6_23.pdf')}
               target='_blank'
               color="inherit"
+              alt="Link to PDF of Resume"
 
             >Resume</Button>
           </Container>

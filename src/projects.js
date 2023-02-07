@@ -51,7 +51,7 @@ export default function Projects() {
                 component="img"
                 height="220"
                 image={require('./assets/Library-of-things.png')}
-                alt="Library of Things"
+                alt="Library of Things Screenshot"
               />
               <CardContent>
                 <Typography gutterBottom component='h3' variant="h4">
@@ -118,7 +118,7 @@ export default function Projects() {
                 component="img"
                 height="220"
                 image={require('./assets/Alexa.png')}
-                alt="Amazon Alexa"
+                alt="Amazon Alexa Picture"
               />
               <CardContent>
                 <Typography gutterBottom component='h3' variant="h4">
@@ -176,7 +176,7 @@ export default function Projects() {
                 component="img"
                 height="220"
                 image={require('./assets/TravelBytes.png')}
-                alt="TravelBytes"
+                alt="TravelBytes Screenshot"
               />
               <CardContent>
                 <Typography gutterBottom variant="h4" component="h3">
