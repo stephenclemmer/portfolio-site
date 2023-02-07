@@ -89,6 +89,7 @@ function Contact() {
       }}
     >
       <Typography
+        component='h2'
         variant='h3'
         color='secondary'
         align='center'
@@ -105,7 +106,7 @@ function Contact() {
           autoComplete="off"
           ref={form}
           onSubmit={sendEmail}
-          // id="myForm"
+        // id="myForm"
         // margin="auto"
         >
           <Grid>
@@ -118,10 +119,10 @@ function Contact() {
               }}
             >
               <TextField
-              sx={{
-                backgroundColor: '#000',
-                borderRadius: 1.0,
-              }}
+                sx={{
+                  backgroundColor: '#000',
+                  borderRadius: 1.0,
+                }}
                 onChange={(e) => setName(e.target.value)}
                 size="small"
                 // margin="dense"
@@ -147,10 +148,10 @@ function Contact() {
               }}
             >
               <TextField
-              sx={{
-                backgroundColor: '#000',
-                borderRadius: 1.0,
-              }}
+                sx={{
+                  backgroundColor: '#000',
+                  borderRadius: 1.0,
+                }}
                 // inputProps={{ style: { color: "red" } }}
                 onChange={(e) => setEmail(e.target.value)}
                 size="small"
@@ -175,10 +176,10 @@ function Contact() {
               }}
             >
               <TextField
-              sx={{
-                backgroundColor: '#000',
-                borderRadius: 1,
-              }}
+                sx={{
+                  backgroundColor: '#000',
+                  borderRadius: 1,
+                }}
                 onChange={(e) => setMessage(e.target.value)}
                 label="Message"
                 name="Message"
@@ -199,10 +200,10 @@ function Contact() {
           >
 
             <Button
-            sx={{
-              backgroundColor: 'green',
-              borderRadius: 4
-            }}
+              sx={{
+                backgroundColor: 'green',
+                borderRadius: 4
+              }}
               variant="contained"
               color="primary"
               type="submit"
@@ -220,26 +221,26 @@ function Contact() {
         }}
       >
 
-        <Typography onClick={() => window.location = 'mailto:stephenjclemmer@gmail.com'}>
+        <Typography component='h3' variant='h6' onClick={() => window.location = 'mailto:stephenjclemmer@gmail.com'}>
           or email me at StephenJClemmer@gmail.com
         </Typography>
       </Box>
 
-{/* _______________________Confirmation Dialog___________________ */}
-<div>
-      <Dialog
-        open={open}
-        onClose={handleClose}
-      >
-        <DialogTitle >
-           Your message has been sent to stephenjclemmer@gmail.com
-        </DialogTitle>
-        <DialogActions>
-          <Button onClick={handleClose}>Close</Button>
-        </DialogActions>
-      </Dialog>
-    </div>
-{/* __________________________________________ */}
+      {/* _______________________Confirmation Dialog___________________ */}
+      <div>
+        <Dialog
+          open={open}
+          onClose={handleClose}
+        >
+          <DialogTitle >
+            Your message has been sent to stephenjclemmer@gmail.com
+          </DialogTitle>
+          <DialogActions>
+            <Button onClick={handleClose}>Close</Button>
+          </DialogActions>
+        </Dialog>
+      </div>
+      {/* __________________________________________ */}
 
     </Container>
 

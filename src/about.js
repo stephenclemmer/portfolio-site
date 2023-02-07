@@ -24,6 +24,7 @@ export default function About() {
           }}
         >
           <Typography
+            component='h2'
             variant='h3'
             color='secondary'
             align='center'
@@ -61,6 +62,7 @@ export default function About() {
                     }}
                   >
                     <Typography
+                      component='h3'
                       align="left"
                       variant="h6"
                     >
@@ -77,6 +79,7 @@ export default function About() {
                     }}
                   >
                     <Typography
+                      component='h3'
                       align="left"
                       variant="h6"
                     >
@@ -95,6 +98,7 @@ export default function About() {
                     }}
                   >
                     <Typography
+                      component='h3'
                       variant="h6"
                       align="left"
                     >
@@ -110,6 +114,7 @@ export default function About() {
                     }}
                   >
                     <Typography
+                      component='h3'
                       variant="h6"
                       align="left"
                     >
@@ -135,10 +140,10 @@ export default function About() {
                   >
                     <Grid container>
                       <ul>
-                        <li><Typography variant="h6" align="left">JavaScript</Typography></li>
-                        <li><Typography variant="h6" align="left">TypeScript</Typography></li>
-                        <li><Typography variant="h6" align="left">React</Typography></li>
-                        <li><Typography variant="h6" align="left">MaterialUI</Typography></li>
+                        <li><Typography component='h3' variant="h6" align="left">JavaScript</Typography></li>
+                        <li><Typography component='h3' variant="h6" align="left">TypeScript</Typography></li>
+                        <li><Typography component='h3' variant="h6" align="left">React</Typography></li>
+                        <li><Typography component='h3' variant="h6" align="left">MaterialUI</Typography></li>
                       </ul>
                     </Grid>
                   </Box>
@@ -150,10 +155,10 @@ export default function About() {
                   >
                     <Grid container>
                       <ul>
-                        <li><Typography variant="h6" align="left">Node.js</Typography></li>
-                        <li><Typography variant="h6" align="left">Express</Typography></li>
-                        <li><Typography variant="h6" align="left">Postgres</Typography></li>
-                        <li><Typography variant="h6" align="left">Socket.io</Typography></li>
+                        <li><Typography component='h3' variant="h6" align="left">Node.js</Typography></li>
+                        <li><Typography component='h3' variant="h6" align="left">Express</Typography></li>
+                        <li><Typography component='h3' variant="h6" align="left">Postgres</Typography></li>
+                        <li><Typography component='h3' variant="h6" align="left">Socket.io</Typography></li>
                       </ul>
                     </Grid>
                   </Box>
@@ -165,10 +170,10 @@ export default function About() {
                   >
                     <Grid container>
                       <ul>
-                        <li><Typography variant="h6" align="left">AWS S3</Typography></li>
-                        <li><Typography variant="h6" align="left">AWS EC2</Typography></li>
-                        <li><Typography variant="h6" align="left">AWS Lambda</Typography></li>
-                        <li><Typography variant="h6" align="left">Elastic Beanstalk</Typography></li>
+                        <li><Typography component='h3' variant="h6" align="left">AWS S3</Typography></li>
+                        <li><Typography component='h3' variant="h6" align="left">AWS EC2</Typography></li>
+                        <li><Typography component='h3' variant="h6" align="left">AWS Lambda</Typography></li>
+                        <li><Typography component='h3' variant="h6" align="left">Elastic Beanstalk</Typography></li>
                       </ul>
                     </Grid>
                   </Box>
@@ -180,10 +185,10 @@ export default function About() {
                   >
                     <Grid container>
                       <ul>
-                        <li><Typography variant="h6" align="left">Bootstrap</Typography></li>
-                        <li><Typography variant="h6" align="left">MongoDB</Typography></li>
-                        <li><Typography variant="h6" align="left">DynamoDB</Typography></li>
-                        <li><Typography variant="h6" align="left">Axios</Typography></li>
+                        <li><Typography component='h3' variant="h6" align="left">Bootstrap</Typography></li>
+                        <li><Typography component='h3' variant="h6" align="left">MongoDB</Typography></li>
+                        <li><Typography component='h3' variant="h6" align="left">DynamoDB</Typography></li>
+                        <li><Typography component='h3' variant="h6" align="left">Axios</Typography></li>
                       </ul>
                     </Grid>
                   </Box>

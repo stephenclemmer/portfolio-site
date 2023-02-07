@@ -8,6 +8,7 @@ export default function Logo() {
     <>
     <Button href="#home" color="inherit">
       <Typography
+      component='h2'
       variant="h6"
       >SC</Typography>
       </Button>

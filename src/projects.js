@@ -17,6 +17,7 @@ export default function Projects() {
       }}
     >
       <Typography
+        component='h2'
         variant='h3'
         color='secondary'
         gutterBottom
@@ -53,7 +54,7 @@ export default function Projects() {
                 alt="Library of Things"
               />
               <CardContent>
-                <Typography gutterBottom variant="h4" component="div">
+                <Typography gutterBottom component='h3' variant="h4">
                   Library of Things
                 </Typography>
                 <div
@@ -67,8 +68,8 @@ export default function Projects() {
                     }}
                   >
                     <Typography
-                      // variant="body2"
-                      variant="h6" 
+                      component='h4'
+                      variant="h6"
                       color="text.secondary"
                       align="left"
                     >
@@ -81,6 +82,7 @@ export default function Projects() {
                     }}
                   >
                     <Typography
+                      component='h4'
                       variant="body2"
                       color="text.secondary"
                     >
@@ -119,7 +121,7 @@ export default function Projects() {
                 alt="Amazon Alexa"
               />
               <CardContent>
-                <Typography gutterBottom variant="h4" component="div">
+                <Typography gutterBottom component='h3' variant="h4">
                   Tech Prep
                 </Typography>
 
@@ -127,10 +129,11 @@ export default function Projects() {
                   sx={{
                     paddingTop: "10px"
                   }}>
-                  <Typography 
-                  variant="h6" 
-                  color="text.secondary"
-                  align="left"
+                  <Typography
+                    component='h4'
+                    variant="h6"
+                    color="text.secondary"
+                    align="left"
                   >
                     A tech-jobs Amazon Alexa skill that emails users current job listings, and quizzes users with interview questions and coding problems.
                   </Typography>
@@ -140,7 +143,7 @@ export default function Projects() {
                     paddingTop: "15px"
                   }}
                 >
-                  <Typography variant="body2" color="text.secondary">
+                  <Typography component='h4' variant="body2" color="text.secondary">
                     Built with AWS S3, Lambda, SNS, and Alexa Developer Console.
                   </Typography>
                 </Box>
@@ -176,7 +179,7 @@ export default function Projects() {
                 alt="TravelBytes"
               />
               <CardContent>
-                <Typography gutterBottom variant="h4" component="div">
+                <Typography gutterBottom variant="h4" component="h3">
                   TravelBytes
                 </Typography>
                 <Box
@@ -186,6 +189,7 @@ export default function Projects() {
                 >
 
                   <Typography
+                    component='h4'
                     variant="h6"
                     color="text.secondary"
                     align="left"
@@ -199,7 +203,8 @@ export default function Projects() {
                   }}
                 >
                   <Typography
-                    variant="body2" 
+                    component='h4'
+                    variant="body2"
                     color="text.secondary">
                     Built with HTML, CSS, JavaScript, React, Bootstrap, MongoDB, Mongoose, and Axios.
                   </Typography>
