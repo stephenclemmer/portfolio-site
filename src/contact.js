@@ -103,10 +103,11 @@ function Contact() {
 
         <form
           noValidate
+          label='Contact Form'
           autoComplete="off"
           ref={form}
           onSubmit={sendEmail}
-        // id="myForm"
+        id="Contact Form"
         // margin="auto"
         >
           <Grid>
