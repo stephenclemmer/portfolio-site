@@ -9,7 +9,7 @@ import { FormControl, makeStyles } from '@mui/material';
 import Box from '@mui/material/Box';
 import React, { useRef } from 'react';
 import emailjs from 'emailjs-com';
-import InputLabel from '@mui/material/InputLabel';
+// import InputLabel from '@mui/material/InputLabel';
 
 // ___________________________
 import Dialog from '@mui/material/Dialog';
@@ -83,7 +83,8 @@ function Contact() {
   return (
 
     <Container
-      id="contact"
+    label='contact'  
+    id="contact"
       sx={{
         paddingTop: "80px",
         margin: "auto"
@@ -102,7 +103,7 @@ function Contact() {
       <FormControl
         margin="normal"
       >
-        <InputLabel htmlFor="Contact form"></InputLabel>
+        {/* <InputLabel htmlFor="Contact form" shrink='false'>Contact Form</InputLabel> */}
 
         <form
           noValidate
@@ -156,7 +157,6 @@ function Contact() {
                   backgroundColor: '#000',
                   borderRadius: 1.0,
                 }}
-                // inputProps={{ style: { color: "red" } }}
                 onChange={(e) => setEmail(e.target.value)}
                 size="small"
                 label="Email"
