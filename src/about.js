@@ -118,7 +118,7 @@ export default function About() {
                       variant="h6"
                       align="left"
                     >
-                      I have worked in entreprenurial environments as a project manager, product manager, and team leader. In 2022 I completed a five-month bootcamp for Advanced Software Development in Full-Stack JavaScript. Some of the technologies that I've been working with recently include:
+                      I have worked in entrepreneurial environments as a project manager, product manager, and team leader. In 2022 I completed a five-month bootcamp for Advanced Software Development in Full-Stack JavaScript. Some of the technologies that I've been working with recently include:
                     </Typography>
                   </Box>
                 </Container>
